@@ -1,0 +1,117 @@
+
+
+/* ================ Achivements========== */
+
+.achivement{
+   margin-top: 3rem;
+}
+.achivement-container{
+   display: grid;
+   grid-template-columns: 40% 60%;
+   gap: 5rem;
+}
+
+.achivement-right > p{
+   padding: 1rem 0 2rem;
+}
+
+.achivement-cards{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 1.5rem;
+}
+
+.achivement-card{
+   background: var(--color-bg1);
+   padding: 1rem;
+   border-radius: 1rem;
+   text-align: center;
+   transition: var(--transition);
+}
+
+.achivement-card:hover{
+   background: var(--color-bg2);
+   box-shadow: 0 3rem 3rem rgba(0,0,0,0.3);
+}
+
+.achivement-card-icon{
+   background-color: var(--color-danger);
+   padding: 0.4rem 0.8rem;
+   border-radius: 1rem;
+   font-size: 2rem;
+   display: inline-block;
+   margin-bottom: 2rem;
+}
+.achivement-card .icon2{
+   background: var(--color-success);
+}
+.achivement-card .icon3{
+   background: var(--color-primary);
+}
+
+.achivement-card p{
+   margin-top: 1rem;
+}
+
+/* ============== Team Member ========= */
+
+.team{
+   background-color: var(--color-bg1);
+   box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);
+}
+.team-container{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 2rem;
+}
+
+.team-member{
+   position: relative;
+   background: var(--color-bg2);
+   padding: 2rem;
+   border: 1px solid transparent;
+   border-radius: 0.5rem;
+   transition: var(--transition);
+   overflow: hidden;
+}
+
+.team-member:hover{
+   background: transparent;
+   border-color: var(--color-primary);
+}
+
+.team-member-image img{
+   filter: saturate(0.5);
+}
+
+.team-member:hover img{
+   filter: saturate(1);
+}
+
+.team-member-info *{
+   text-align: center;
+   margin-top: 1.2rem;
+}
+
+.team-member-info p{
+   color: var(--color-light);
+}
+.team-member-social{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   right: -100%;
+   box-sizing: -2rem 0 2rem rgba(0,0,0.0.3);
+   display: flex;
+   flex-direction: column;
+   background: var(--color-primary);
+   border-radius: 1rem 0 0 1rem;
+   transition: var(--transition);
+}
+.team-member-social a{
+   padding: 1rem;
+}
+
+.team-member:hover .team-member-social{
+   right: 0;
+}

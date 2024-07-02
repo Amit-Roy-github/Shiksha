@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SHIKSHA</title>
+   <link rel="shortcut icon" type="x-icon" href="./images/noto--school.png">
+   <link rel="stylesheet" href="./CSS/style.css">
+   <link rel="stylesheet" href="./CSS/contact.css">
+   <style>
+      body{
+         background-image: url("images/bg-texture.png");
+      }
+   </style>
+   <!-- ===============Google Font (Montserrat)============ -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+   <!-- ======== IconsCout CDN ======== -->
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+   <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script> 
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" /> -->
+
+</head>
+<body>
+   <!-- =======NavBar Section===== -->
+     <nav>
+        <div class="container nav_container">
+         <a href="index.html"><h4>SHIKSHA</h4></a>
+         <div class="nav_menu">
+            <div class="home"><a href="index.html">Home</a></div>
+            <div class="about"><a href="about.html">About</a></div>
+            <div class="Courses"><a href="courses.html">Courses</a></div>
+            <div class="contact"><a href="contact.html">Contact</a></div>
+         </div>
+      </div>
+     </nav>
+
+
+
+      <section class="contact">
+         <div class="container contact-container">
+            <aside class="contact-aside">
+               <div class="aside-image">
+                  <img src="./images/contact.svg" alt="">
+               </div>
+               <h2>Contact Us</h2>
+               <p>Feel Free to conatact us . </p>
+               <ul class="contact-detail">
+                  <li>
+                     <ion-icon name="call-outline"></ion-icon>
+                     <h5>+91 432 543 5675</h5>
+                  </li>
+                  <li>
+                     <ion-icon name="mail-outline"></ion-icon>
+                     <h5>abc@gmail.com</h5>
+                  </li>
+                  <li>
+                     <ion-icon name="location-outline"></ion-icon>
+                     <h5>NIT Silchar</h5>
+                  </li>
+               </ul>
+               <ul class="contact-social">
+                  <li>
+                     <a href="https://facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+                  </li>
+                  <li>
+                     <a href="https://instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>
+                  </li>
+                  <li>
+                     <a href="https://twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+                  </li>
+                  <li>
+                     <a href="https://linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a>
+                  </li>
+               </ul>
+            </aside>
+
+            <form >
+               <div class="form-name">
+                  <input type="text" name="First Name" placeholder="First Name" id="name" required>
+                  <input type="text" id="aa" name="Last Name" placeholder="Last Name" required>
+               </div>
+               <input type="email" name="Email Adress" placeholder="Your Email" id="email" required>
+               <textarea name="Message" id="text"  rows="7" placeholder="Message" required ></textarea>
+               <div  class="btn btn-primary" onclick="message()" >Send Message</div>
+               <div class="messege">
+                  <div class="success" id="success">
+                     Your messege sent successfully  !
+                  </div>
+                  <div class="danger" id="danger">
+                     Feilds can't be empty.
+                  </div>
+               </div>
+            </form>
+         </div>
+      </section>
+
+
+
+
+
+
+
+
+
+<!-- =======Footer===== -->
+
+<footer class="footer">
+   <div class="container footer-container">
+      <div class="footer-1">
+         <a href="index.html" class="footer-logo"><h4>SHIKSHA</h4></a>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dicta.</p>
+      </div>
+      <div class="footer-2">
+         <h4>Permalinks</h4>
+         <ul class="permalinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         </ul>
+      </div>
+
+      <div class="footer-3">
+         <h4>Privacy</h4>
+         <ul class="privacy">
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Refund Policy</a></li>
+         </ul>
+      </div>
+
+      <div class="footer-4">
+         <h4>Contact Us</h4>
+         <div>
+            <p>+91 405 906 333</p>
+            <p>Shiksh@gmail.com</p>
+         </div>
+      </div>
+   </div>
+   <div class="footer-copyright">
+      <small>Copyright &copy; SHIKSHA</small>
+   </div>
+</footer>
+
+<script src="index.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

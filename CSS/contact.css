@@ -1,0 +1,105 @@
+
+
+
+/* ==============contact========= */
+
+ 
+.contact-container{
+   background: var(--color-bg1);
+   display: grid;
+   padding: 4rem;
+   grid-template-columns: 40% 60%;
+   gap: 4rem;
+   height: 22rem;
+   margin: 7rem auto;
+   border-radius: 1rem;
+}
+ 
+.contact-aside{
+   background: var(--color-primary);
+   padding: 3rem;
+   border-radius: 1rem;
+   position: relative;
+   bottom: 10rem;
+}
+
+.aside-image{
+   width: 12rem;
+   margin-bottom: 2rem;
+}
+
+.contact-aside h2{
+   text-align: left;
+   margin-bottom: 1rem;
+}
+
+.contact-aside p{
+   font-size: 0.9rem;
+   margin-bottom: 2rem;
+}
+
+.contact-aside li{
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+   margin-bottom: 1rem;
+}
+
+.contact-social{
+   display: flex;
+   gap: 1rem;
+   margin-top: 3rem;
+}
+.contact-social li a{
+   /* background: var(--color-bg2); */
+   /* padding: 0.8rem; */
+   border-radius: 50%;
+   font-size: 2rem;
+}
+
+
+/* ==================Form============== */
+
+form{
+   display: flex;
+   flex-direction: column;
+   margin-right: 4rem;
+}
+
+.form-name{
+   display: flex;
+   gap: 1.2rem;
+}
+
+form input[type="text"]{
+   width: 50%;
+}
+
+ input, textarea{
+   width: 100%;
+   background: var(--color-bg);
+   padding: 1rem;
+   margin-bottom: 1.2rem ;
+   border-radius: 0.3rem ;
+   color: var(--color-white);
+}
+form textarea{
+   margin-bottom:  0 ;
+}
+
+form .btn{
+   width: max-content;
+   margin: 1rem 0 ;
+   cursor: pointer;
+}
+
+.messege .success{
+   color: green ;
+   font-weight: 800 ;
+   display: none ;
+}
+.messege .danger{
+   color: var(--color-danger) ;
+   font-weight: 600 ;
+   display: none ;
+}
